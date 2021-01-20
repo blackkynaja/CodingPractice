@@ -1,5 +1,21 @@
 import Foundation
 
+// Problem: Merge two arrays of intervals
+
+// Given 2 arrays of intervals.
+
+// Interval is defined with left and right border and discrete points, like [2, 3], [0, 0], etc.
+
+// Array of intervals is non intersected array of sorted intervals, for example: [0, 0], [2, 2], [5, 10] is a valid array of intervals, but [0, 1], [1, 2] is not valid, because you can write it as [0, 2]. [0, 2], [1, 5] is not valid as well, since these two intervals intersect.
+
+// You need to find the AND operation of these two arrays. For example:
+
+// 1st array: [0, 2], [5, 10], [16, 20] = {0, 1, 2, 5, 6... 10, 16.. 20}
+// 2nd array: [1, 5], [10, 18], [20, 23] = {1..5, ...}
+
+
+// AND Result: [1, 2], [5, 5], [10, 10], [16, 18], [20, 20]
+
 public class MergeTwoIntervalArray {
     func isIntersect(array1: [Int], array2: [Int]) -> Bool {
         if (array1[0] < array2[0]) {
