@@ -34,6 +34,7 @@
 		9D22B26625B813850022D0D6 /* SortbyHeight .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26525B813850022D0D6 /* SortbyHeight .swift */; };
 		9D22B26925B813B50022D0D6 /* ReverseInParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */; };
 		9DD701FA25B8267F00782A73 /* OppositeSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701F925B8267F00782A73 /* OppositeSums.swift */; };
+		9DD701FD25B82DE300782A73 /* RotateAndFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701FC25B82DE300782A73 /* RotateAndFall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +78,7 @@
 		9D22B26525B813850022D0D6 /* SortbyHeight .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortbyHeight .swift"; sourceTree = "<group>"; };
 		9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInParentheses.swift; sourceTree = "<group>"; };
 		9DD701F925B8267F00782A73 /* OppositeSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeSums.swift; sourceTree = "<group>"; };
+		9DD701FC25B82DE300782A73 /* RotateAndFall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndFall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				9D22B23F25B7FD6A0022D0D6 /* ClimbingStairs.swift */,
 				9D22B25625B7FF9F0022D0D6 /* Strstr.swift */,
 				9DD701F925B8267F00782A73 /* OppositeSums.swift */,
+				9DD701FC25B82DE300782A73 /* RotateAndFall.swift */,
 			);
 			path = InterviewPractice;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				9D22B25725B7FF9F0022D0D6 /* Strstr.swift in Sources */,
 				9D22B22725B7FA500022D0D6 /* Sudoku2.swift in Sources */,
 				9D22B1E725B7F3020022D0D6 /* LosslessDataCompression.swift in Sources */,
+				9DD701FD25B82DE300782A73 /* RotateAndFall.swift in Sources */,
 				9D22B26625B813850022D0D6 /* SortbyHeight .swift in Sources */,
 				9D22B20C25B7F7FA0022D0D6 /* NightRoute.swift in Sources */,
 				9D22B21925B7F9BC0022D0D6 /* EfficientJanitor.swift in Sources */,
