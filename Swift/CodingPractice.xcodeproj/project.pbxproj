@@ -33,6 +33,7 @@
 		9D22B26325B813220022D0D6 /* AreSimilar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26225B813220022D0D6 /* AreSimilar.swift */; };
 		9D22B26625B813850022D0D6 /* SortbyHeight .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26525B813850022D0D6 /* SortbyHeight .swift */; };
 		9D22B26925B813B50022D0D6 /* ReverseInParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */; };
+		9DD701FA25B8267F00782A73 /* OppositeSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701F925B8267F00782A73 /* OppositeSums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		9D22B26225B813220022D0D6 /* AreSimilar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreSimilar.swift; sourceTree = "<group>"; };
 		9D22B26525B813850022D0D6 /* SortbyHeight .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SortbyHeight .swift"; sourceTree = "<group>"; };
 		9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInParentheses.swift; sourceTree = "<group>"; };
+		9DD701F925B8267F00782A73 /* OppositeSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeSums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				9D22B23225B7FC430022D0D6 /* AreFollowingPatterns.swift */,
 				9D22B23F25B7FD6A0022D0D6 /* ClimbingStairs.swift */,
 				9D22B25625B7FF9F0022D0D6 /* Strstr.swift */,
+				9DD701F925B8267F00782A73 /* OppositeSums.swift */,
 			);
 			path = InterviewPractice;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				9D22B21F25B7F9F50022D0D6 /* FirstNotRepeatingCharacter.swift in Sources */,
 				9D22B1EA25B7F3930022D0D6 /* CoverDebts.swift in Sources */,
 				9D22B21825B7F9BC0022D0D6 /* Prison.swift in Sources */,
+				9DD701FA25B8267F00782A73 /* OppositeSums.swift in Sources */,
 				9D21350325B7E2B9007E9C22 /* main.swift in Sources */,
 				9D22B26325B813220022D0D6 /* AreSimilar.swift in Sources */,
 				9D22B26925B813B50022D0D6 /* ReverseInParentheses.swift in Sources */,
