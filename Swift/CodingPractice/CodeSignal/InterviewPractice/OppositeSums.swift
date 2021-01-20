@@ -51,3 +51,11 @@ func checkOppositeSums(array: [Int]) -> Int {
     
     return count
 }
+
+/*
+ Test Example
+ let array = [1,11,20,2,22,13,5]
+ let array1 = [1,1,1,1,1]
+ let array2 = Array(1...30)
+ let array3 = Array(1...200)
+ */
