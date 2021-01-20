@@ -1,5 +1,5 @@
 # CodingPractice
 
-My coding practice in Codesignal, Leetcode and Hackerrank
+My coding practice in Codesignal, Leetcode and Hackerrank.
 
-Practice in three langauges: Swift, Objective-C and Python
+Practice in three langauges: Swift, Objective-C and Python.
