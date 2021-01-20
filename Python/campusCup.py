@@ -1,3 +1,6 @@
+# Company: Dropbox
+# https://app.codesignal.com/company-challenges/dropbox/RMJDiTprBf5HQY3oa
+
 def getStorageFromPoint(point):
 	storage = 0
 	if point >= 100:
