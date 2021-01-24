@@ -14,7 +14,7 @@
  Because "foo(bar(baz))blim" becomes "foo(barzab)blim" and then "foobazrabblim".
  */
 
-struct Pair {
+private struct Pair {
     let first: Int
     let second: Int
 }

@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum SuggestType {
+private enum SuggestType {
     case leave
     case add
     case remove
@@ -19,7 +19,7 @@ enum SuggestType {
     }
 }
 
-struct HistoryPayment: CustomStringConvertible {
+private struct HistoryPayment: CustomStringConvertible {
     var amount: Int
     var date: Date
     
@@ -28,7 +28,7 @@ struct HistoryPayment: CustomStringConvertible {
     }
 }
 
-func getHistoryPayment(history: [String]) -> [HistoryPayment] {
+private func getHistoryPayment(history: [String]) -> [HistoryPayment] {
     var historyPayments = [HistoryPayment]()
     
     for item in history {
@@ -50,7 +50,7 @@ func getHistoryPayment(history: [String]) -> [HistoryPayment] {
     return historyPayments
 }
 
-func getNewPaid(currentAmount: Int, credit: Int, percent: Int, suggestType: SuggestType) -> Int {
+private func getNewPaid(currentAmount: Int, credit: Int, percent: Int, suggestType: SuggestType) -> Int {
     if suggestType == .leave {
         return currentAmount
     }
@@ -65,7 +65,7 @@ func getNewPaid(currentAmount: Int, credit: Int, percent: Int, suggestType: Sugg
     return Int(round(newAmount))
 }
 
-func generateSuggest(type: SuggestType, amount: Int, credit: Int) -> String {
+private func generateSuggest(type: SuggestType, amount: Int, credit: Int) -> String {
     var suggestString = ""
     suggestString += type.suggestString
     suggestString += ", \(amount)."
@@ -107,7 +107,6 @@ func creditPayments(a: Int, b: Int, startDate: String, endDate: String, history:
                         let newDate = calendar.date(from: itemComp)!
                         return newDate > threeMonthDate
                     }
-//                    print("lastThree: ", lastThreeMonthPayment, current)
                     
                     let amountLastThree = lastThreeMonthPayment.reduce(0, {$0 + $1.amount})
                     if amountLastThree >= 3*currentAmount {
@@ -156,12 +155,10 @@ func creditPayments(a: Int, b: Int, startDate: String, endDate: String, history:
                     }
                 }
                 
-                
                 currentAmount = getNewPaid(currentAmount: currentAmount, credit: a, percent: 1, suggestType: suggestType)
                                 
                 let suggestString = generateSuggest(type: suggestType, amount: currentAmount, credit: a)
                 suggest.append(suggestString)
-//                print(suggestString)
                 
                 current = calendar.date(byAdding: component, to: current)!
                 countMonth += 1

@@ -35,6 +35,10 @@
 		9D22B26925B813B50022D0D6 /* ReverseInParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */; };
 		9DD701FA25B8267F00782A73 /* OppositeSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701F925B8267F00782A73 /* OppositeSums.swift */; };
 		9DD701FD25B82DE300782A73 /* RotateAndFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701FC25B82DE300782A73 /* RotateAndFall.swift */; };
+		9DE9B28325BD342F00ABA53A /* IsIPv4Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B28225BD342F00ABA53A /* IsIPv4Address.swift */; };
+		9DE9B28625BD445300ABA53A /* BoxBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B28525BD445300ABA53A /* BoxBlur.swift */; };
+		9DE9B28925BD4E0100ABA53A /* Minesweeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B28825BD4E0100ABA53A /* Minesweeper.swift */; };
+		9DE9B28C25BD796200ABA53A /* LongestUncorruptedSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B28B25BD796200ABA53A /* LongestUncorruptedSegment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +83,10 @@
 		9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInParentheses.swift; sourceTree = "<group>"; };
 		9DD701F925B8267F00782A73 /* OppositeSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeSums.swift; sourceTree = "<group>"; };
 		9DD701FC25B82DE300782A73 /* RotateAndFall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndFall.swift; sourceTree = "<group>"; };
+		9DE9B28225BD342F00ABA53A /* IsIPv4Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsIPv4Address.swift; sourceTree = "<group>"; };
+		9DE9B28525BD445300ABA53A /* BoxBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBlur.swift; sourceTree = "<group>"; };
+		9DE9B28825BD4E0100ABA53A /* Minesweeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minesweeper.swift; sourceTree = "<group>"; };
+		9DE9B28B25BD796200ABA53A /* LongestUncorruptedSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestUncorruptedSegment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 				9D22B1FF25B7F5A30022D0D6 /* FareEstimator.swift */,
 				9D22B20225B7F6CD0022D0D6 /* PerfectCity.swift */,
 				9D22B20B25B7F7FA0022D0D6 /* NightRoute.swift */,
+				9DE9B28B25BD796200ABA53A /* LongestUncorruptedSegment.swift */,
 			);
 			path = CompanyChallenge;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 				9D22B26225B813220022D0D6 /* AreSimilar.swift */,
 				9D22B26525B813850022D0D6 /* SortbyHeight .swift */,
 				9D22B26825B813B50022D0D6 /* ReverseInParentheses.swift */,
+				9DE9B28225BD342F00ABA53A /* IsIPv4Address.swift */,
+				9DE9B28525BD445300ABA53A /* BoxBlur.swift */,
+				9DE9B28825BD4E0100ABA53A /* Minesweeper.swift */,
 			);
 			path = Arcade;
 			sourceTree = "<group>";
@@ -250,10 +262,13 @@
 			files = (
 				9D22B20325B7F6CD0022D0D6 /* PerfectCity.swift in Sources */,
 				9D22B22325B7FA1B0022D0D6 /* RotateImage.swift in Sources */,
+				9DE9B28925BD4E0100ABA53A /* Minesweeper.swift in Sources */,
 				9D22B21625B7F9BC0022D0D6 /* MergeTwoIntervalArray.swift in Sources */,
+				9DE9B28C25BD796200ABA53A /* LongestUncorruptedSegment.swift in Sources */,
 				9D22B21C25B7F9CC0022D0D6 /* FirstDuplicate.swift in Sources */,
 				9D22B26025B812ED0022D0D6 /* PalindromeRearranging.swift in Sources */,
 				9D22B22A25B7FA790022D0D6 /* IsCryptSolution.swift in Sources */,
+				9DE9B28325BD342F00ABA53A /* IsIPv4Address.swift in Sources */,
 				9D22B24025B7FD6A0022D0D6 /* ClimbingStairs.swift in Sources */,
 				9D22B1F325B7F4790022D0D6 /* CreditPayments.swift in Sources */,
 				9D22B25725B7FF9F0022D0D6 /* Strstr.swift in Sources */,
@@ -261,6 +276,7 @@
 				9D22B1E725B7F3020022D0D6 /* LosslessDataCompression.swift in Sources */,
 				9DD701FD25B82DE300782A73 /* RotateAndFall.swift in Sources */,
 				9D22B26625B813850022D0D6 /* SortbyHeight .swift in Sources */,
+				9DE9B28625BD445300ABA53A /* BoxBlur.swift in Sources */,
 				9D22B20C25B7F7FA0022D0D6 /* NightRoute.swift in Sources */,
 				9D22B21925B7F9BC0022D0D6 /* EfficientJanitor.swift in Sources */,
 				9D22B21725B7F9BC0022D0D6 /* LargestSubgrid.swift in Sources */,
