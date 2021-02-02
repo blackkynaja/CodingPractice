@@ -39,6 +39,7 @@
 		9D86B47D25C0FEC100FDCEC5 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86B47C25C0FEC100FDCEC5 /* Permutations.swift */; };
 		9D86B48025C0FF2B00FDCEC5 /* LetterCombinationsOfAPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86B47F25C0FF2B00FDCEC5 /* LetterCombinationsOfAPhoneNumber.swift */; };
 		9D86B48325C0FF6200FDCEC5 /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D86B48225C0FF6200FDCEC5 /* TwoSum.swift */; };
+		9D9DBB5325C8ED19008F045B /* HouseRobber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9DBB5225C8ED19008F045B /* HouseRobber.swift */; };
 		9DD701FA25B8267F00782A73 /* OppositeSums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701F925B8267F00782A73 /* OppositeSums.swift */; };
 		9DD701FD25B82DE300782A73 /* RotateAndFall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD701FC25B82DE300782A73 /* RotateAndFall.swift */; };
 		9DE9B28325BD342F00ABA53A /* IsIPv4Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9B28225BD342F00ABA53A /* IsIPv4Address.swift */; };
@@ -93,6 +94,7 @@
 		9D86B47C25C0FEC100FDCEC5 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		9D86B47F25C0FF2B00FDCEC5 /* LetterCombinationsOfAPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCombinationsOfAPhoneNumber.swift; sourceTree = "<group>"; };
 		9D86B48225C0FF6200FDCEC5 /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		9D9DBB5225C8ED19008F045B /* HouseRobber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRobber.swift; sourceTree = "<group>"; };
 		9DD701F925B8267F00782A73 /* OppositeSums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppositeSums.swift; sourceTree = "<group>"; };
 		9DD701FC25B82DE300782A73 /* RotateAndFall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAndFall.swift; sourceTree = "<group>"; };
 		9DE9B28225BD342F00ABA53A /* IsIPv4Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsIPv4Address.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				9D22B25625B7FF9F0022D0D6 /* Strstr.swift */,
 				9DD701F925B8267F00782A73 /* OppositeSums.swift */,
 				9DD701FC25B82DE300782A73 /* RotateAndFall.swift */,
+				9D9DBB5225C8ED19008F045B /* HouseRobber.swift */,
 			);
 			path = InterviewPractice;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D22B20325B7F6CD0022D0D6 /* PerfectCity.swift in Sources */,
+				9D9DBB5325C8ED19008F045B /* HouseRobber.swift in Sources */,
 				9D22B22325B7FA1B0022D0D6 /* RotateImage.swift in Sources */,
 				9DE9B28925BD4E0100ABA53A /* Minesweeper.swift in Sources */,
 				9D22B21625B7F9BC0022D0D6 /* MergeTwoIntervalArray.swift in Sources */,
