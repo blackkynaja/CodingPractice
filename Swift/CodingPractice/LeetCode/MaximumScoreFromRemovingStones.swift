@@ -1,9 +1,6 @@
-//
-//  MaximumScoreFromRemovingStones.swift
-//  Test
-//
-//  Created by Yutthapong Kawunruan on 2/6/21.
-//
+/*
+ https://leetcode.com/problems/maximum-score-from-removing-stones/
+ */
 
 func maximumScore(_ a: Int, _ b: Int, _ c: Int) -> Int {
     var nums = [a,b,c]
