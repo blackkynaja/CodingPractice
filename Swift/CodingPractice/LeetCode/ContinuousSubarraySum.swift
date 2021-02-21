@@ -1,11 +1,6 @@
-//
-//  ContinuousSubarraySum.swift
-//  Test
-//
-//  Created by Yutthapong Kawunruan on 2/16/21.
-//
-
-import Foundation
+/*
+ https://leetcode.com/problems/continuous-subarray-sum/
+ */
 
 //TODO: O(n^2) still need to improve the performance
 func checkSubarraySum(_ nums: [Int], _ k: Int) -> Bool {
