@@ -4,7 +4,7 @@
 
 //Definition for a binary tree node.
 class BinaryTreeRightSideView {
-    public class TreeNode {
+    class TreeNode {
         public var val: Int
         public var left: TreeNode?
         public var right: TreeNode?
