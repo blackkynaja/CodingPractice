@@ -24,8 +24,3 @@ class Subsets {
         return results
     }
 }
-
-
-class Solution {
-    
-}
