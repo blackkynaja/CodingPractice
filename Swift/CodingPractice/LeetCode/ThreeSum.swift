@@ -2,6 +2,7 @@
  https://leetcode.com/problems/3sum/
  */
 class ThreeSum {
+    
     func threeSum(_ nums: [Int]) -> [[Int]] {
         var results = [[Int]]()
         var visited = Set<Int>()
@@ -28,4 +29,5 @@ class ThreeSum {
         
         return results
     }
+    
 }
