@@ -2,7 +2,9 @@
  https://leetcode.com/problems/permutations/
  */
 class Permutations {
-    func permuteHelper(_ nums: [Int],_ temps: inout [Int],_ results: inout [[Int]]) {
+    
+    // MARK: - Recursive
+    func permuteHelper(_ nums: [Int],_ temps: [Int],_ results: inout [[Int]]) {
         if temps.count == nums.count {
             results.append(temps)
             return
@@ -10,17 +12,45 @@ class Permutations {
         
         for num in nums {
             if !temps.contains(num) {
-                temps.append(num)
-                permuteHelper(nums, &temps, &results)
-                temps.removeLast()
+                permuteHelper(nums, temps+[num], &results)
             }
         }
     }
 
-    func permute(_ nums: [Int]) -> [[Int]] {
-        var temps = [Int]()
+    func permuteRe(_ nums: [Int]) -> [[Int]] {
         var results = [[Int]]()
-        permuteHelper(nums, &temps, &results)
+        permuteHelper(nums, [], &results)
         return results
     }
+    
+    // MARK: - BFS
+    func permuteBFS(_ nums: [Int]) -> [[Int]] {
+            var queue = [([Int], Set<Int>)]()
+            var tempLength = 1
+            
+            for (index, value) in nums.enumerated() {
+                let set : Set = [index]
+                let item = ([value], set)
+                queue.append(item)
+            }
+            
+            while (tempLength < nums.count) {
+                var nextQueue = [([Int], Set<Int>)]()
+                for item in queue {
+                    for (index, value) in nums.enumerated() {
+                        if (!item.1.contains(index)) {
+                            var tempValue = item.0
+                            tempValue.append(value)
+                            var tempSet = item.1
+                            tempSet.insert(index)
+                            nextQueue.append((tempValue, tempSet))
+                        }
+                    }
+                }
+                tempLength+=1
+                queue = nextQueue
+            }
+            
+            return queue.map({$0.0})
+        }
 }
