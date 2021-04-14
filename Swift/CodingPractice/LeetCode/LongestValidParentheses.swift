@@ -38,6 +38,10 @@ class LongestValidParentheses {
             }
         }
         
+        var s = [String.Element]()
+        s.append(contentsOf: String(repeatElement(" ", count: 4)))
+        s.append(contentsOf: String(repeatElement("X", count: 4)))
+        
         return max
     }
     
