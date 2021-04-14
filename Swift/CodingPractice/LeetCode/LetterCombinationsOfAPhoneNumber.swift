@@ -14,7 +14,6 @@ class LetterCombinationsOfAPhoneNumber {
                   for result in results {
                     let combString = result+String(l)
                     temp.append(combString)
-                    // print(combString)
                   }
                 } else {
                   temp.append(String(l))
