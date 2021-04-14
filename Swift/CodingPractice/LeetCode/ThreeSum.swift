@@ -15,7 +15,6 @@ class ThreeSum {
             var set = Set<Int>()
             var insideVisited = Set<Int>()
             for i in firstIndex+1..<sortedNums.count {
-                print(firstValue, sortedNums[i], set)
                 if set.contains(target-sortedNums[i]) && !insideVisited.contains(sortedNums[i]) {
                     results.append([firstValue, sortedNums[i], target-sortedNums[i]])
                     insideVisited.insert(sortedNums[i])
