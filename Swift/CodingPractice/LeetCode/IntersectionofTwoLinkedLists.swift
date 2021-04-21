@@ -3,15 +3,6 @@
  */
 
 class IntersectionofTwoLinkedLists {
-    // Definition for singly-linked list.
-    class ListNode {
-        public var val: Int
-        public var next: ListNode?
-        public init(_ val: Int) {
-            self.val = val
-            self.next = nil
-        }
-    }
     
     func getLength(_ head: ListNode?) -> Int {
         var length = 0
