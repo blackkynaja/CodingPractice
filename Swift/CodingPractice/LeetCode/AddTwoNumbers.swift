@@ -27,7 +27,7 @@ class AddTwoNumbers {
             let newNode = ListNode(sum%10)
             if result != nil {
                 previous!.next = newNode
-                previous = newNode
+                previous = previous!.next
             } else {
                 result = newNode
                 previous = newNode
@@ -38,7 +38,7 @@ class AddTwoNumbers {
         if carry == 1 {
             let newNode = ListNode(1)
             previous!.next = newNode
-            previous = newNode
+            previous = previous!.next
         }
         
         
