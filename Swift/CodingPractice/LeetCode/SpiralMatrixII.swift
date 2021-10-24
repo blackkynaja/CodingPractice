@@ -1,9 +1,63 @@
 /*
- 
+ https://leetcode.com/problems/spiral-matrix-ii/
  */
 
 class SpiralMatrixII {
-    func generateMatrix(_ n: Int) -> [[Int]] {
+    func replaceBorder(_ matrix: inout [[Int]], _ index: Int, _ startNum: Int) -> Int {
+        let bRow = matrix.count-index
+        let bCol = matrix[0].count-index
+        var num = startNum
+
+        for col in index..<bCol {
+            matrix[index][col] = num
+            num+=1
+        }
+        
+        for row in index+1..<bRow {
+            matrix[row][bCol-1] = num
+            num+=1
+        }
+        
+        if bRow-1 != index {
+            var col = bCol-2
+            while col >= index {
+                matrix[bRow-1][col] = num
+                col-=1
+                num+=1
+            }
+        }
+        
+        if bCol-1 != index {
+            var row = bRow-2
+            while row > index {
+                matrix[row][index] = num
+                row-=1
+                num+=1
+            }
+        }
+        
+        return num
+    }
+    
+    func generateMatrix2(_ n: Int) -> [[Int]] {
+        var matrix = [[Int]](repeating: Array(repeating: 0, count: n), count: n)
+        var border = 0
+        var num = 1
+        
+        if matrix.count == 2 || matrix[0].count == 2 {
+            num = replaceBorder(&matrix, border, num)
+        } else {
+            let maxBorder = min(matrix.count, matrix[0].count)
+            while border < maxBorder/2+maxBorder%2 {
+                num = replaceBorder(&matrix, border, num)
+                border+=1
+            }
+        }
+        
+        return matrix
+    }
+    
+    func generateMatrix1(_ n: Int) -> [[Int]] {
         var direction = 0
         var left = 0
         var right = n-1
@@ -15,7 +69,6 @@ class SpiralMatrixII {
         var matrix = [[Int]](repeating: Array(repeating: 0, count: n), count: n)
         
         while count <= n*n {
-            print(row, column)
             matrix[row][column] = count
             count+=1
             if direction%4 == 0 {
@@ -49,4 +102,9 @@ class SpiralMatrixII {
         
         return matrix
     }
+    
+    func generateMatrix(_ n: Int) -> [[Int]] {
+        return generateMatrix2(n)
+    }
+
 }
