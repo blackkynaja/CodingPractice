@@ -22,4 +22,33 @@ class ListNode {
         self.val = val
         self.next = nil
     }
+    
+    public class func listNodes(_ vals: [Int]) -> ListNode? {
+        if vals.count <= 0 {
+            return nil
+        }
+        
+        let node = ListNode(vals.first!)
+        var current = node
+        for i in 1..<vals.count {
+            let next = ListNode(vals[i])
+            current.next = next
+            current = next
+        }
+        
+        return node
+    }
+    
+    public func listNodeToArray() -> [Int] {
+        var results = [Int]()
+        var current: ListNode?
+        current = self
+        
+        while current != nil {
+            results.append(current!.val)
+            current = current!.next
+        }
+        
+        return results
+    }
 }
