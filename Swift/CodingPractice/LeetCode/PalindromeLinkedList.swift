@@ -38,9 +38,8 @@ class PalindromeLinkedList {
     
     func isPalindrome(_ head: ListNode?) -> Bool {
         let length = findListLenght(head)
-        let reversed = reverseHalf(head, length)
         var current = head
-        var currentR = reversed
+        var currentR = reverseHalf(head, length)
         
         while currentR != nil {
             if current!.val != currentR!.val {
