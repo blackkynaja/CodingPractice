@@ -4,7 +4,7 @@
  Topics: Hash Table, String
  */
 
-class Solution {
+class FirstUniqueCharacterinaString {
     func firstUniqChar(_ s: String) -> Int {
         var dict = [String.Element: Int]()
         
