@@ -56,7 +56,7 @@ class JumpGameIV {
                     set.insert(num)
                     for index in dict[num]! {
                         if !visited[index] {
-                            visited[index] == true
+                            visited[index] = true
                             nextQ.append((index, temp.1+1))
                         }
                     }
