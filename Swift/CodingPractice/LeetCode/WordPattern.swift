@@ -6,7 +6,7 @@
 
 class WordPattern {
     func wordPattern(_ pattern: String, _ s: String) -> Bool {
-        var arr = s.components(separatedBy: " ")
+        let arr = s.components(separatedBy: " ")
         
         if arr.count != pattern.count {
             return false
