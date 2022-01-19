@@ -52,3 +52,13 @@ class ListNode {
         return results
     }
 }
+
+extension ListNode: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
+    }
+    
+    static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
