@@ -1,5 +1,7 @@
 /*
  https://leetcode.com/problems/robot-bounded-in-circle/
+ 
+ Topics: Math, String, Simulation
  */
 
 class RobotBoundedInCircle {
