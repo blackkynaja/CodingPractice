@@ -1,6 +1,9 @@
 /*
  https://leetcode.com/problems/permutations/
+ 
+ Topics: Array, Backtracking
  */
+
 class Permutations {
     
     // MARK: - Recursive
