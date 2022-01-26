@@ -2,7 +2,7 @@
  https://leetcode.com/problems/decode-string/description/
  */
 
-class Solution {
+class DecodeString {
     func isContainBracket(_ arrS: [String.Element]) -> Bool {
         return arrS.contains("[")
     }
