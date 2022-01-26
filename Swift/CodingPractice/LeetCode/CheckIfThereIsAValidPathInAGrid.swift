@@ -1,5 +1,6 @@
 /*
  https://leetcode.com/problems/check-if-there-is-a-valid-path-in-a-grid/
+ Topics: Array, DFS, BFS, Matrix
  */
 
 class CheckIfThereIsAValidPathInAGrid {
@@ -20,7 +21,6 @@ class CheckIfThereIsAValidPathInAGrid {
         while stack.count > 0 {
             let currentPos = stack.removeLast()
             if currentPos[0] == grid[0].count - 1 && currentPos[1] == grid.count - 1 {
-                print("visited: ",visited)
                 return true
             }
             
