@@ -1,5 +1,7 @@
 /*
  https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+ 
+ Topics: Array, DP, Backtracking, Memoization
  */
 
 class PartitiontoKEqualSumSubsets {
