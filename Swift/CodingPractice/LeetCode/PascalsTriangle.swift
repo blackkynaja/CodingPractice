@@ -1,7 +1,7 @@
 /*
  https://leetcode.com/problems/pascals-triangle/
  
- Topics: Array, Dynamic Programming
+ Topics: Array, DP
  */
 
 class PascalsTriangle {
