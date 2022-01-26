@@ -1,7 +1,31 @@
 /*
- https://leetcode.com/problems/largest-merge-of-two-strings/submissions/
+ https://leetcode.com/problems/largest-merge-of-two-strings/
+ 
+ Topics: Two Pointers, String, Greedy
  */
+
 class LargestMergeOfTwoStrings {
+    func compareWord(_ i: Int, _ word1: [String.Element], _ j: Int, _ word2: [String.Element]) -> Bool {
+        var tempI = i
+        var tempJ = j
+        while tempI < word1.count && tempJ < word2.count {
+            if word1[tempI] == word2[tempJ] {
+                tempI+=1
+                tempJ+=1
+            } else if word1[tempI] > word2[tempJ] {
+                return true
+            } else {
+                return false
+            }
+        }
+        
+        if tempI >= word1.count {
+            return false
+        }
+        
+        return true
+    }
+    
     func largestMerge(_ word1: String, _ word2: String) -> String {
         var i = 0
         var j = 0
@@ -17,29 +41,7 @@ class LargestMergeOfTwoStrings {
                 word.append(arrWord2[j])
                 j+=1
             } else {
-                var isTop = true
-                var tempI = i
-                var tempJ = j
-                while tempI < arrWord1.count && tempJ < arrWord2.count {
-                    if arrWord1[tempI] == arrWord2[tempJ] {
-                        tempI+=1
-                        tempJ+=1
-                    } else if arrWord1[tempI] > arrWord2[tempJ] {
-                        break
-                    } else {
-                        isTop = false
-                        break
-                    }
-                }
-                
-                if tempI >= arrWord1.count {
-                    isTop = false
-                }
-                
-                if tempJ >= arrWord2.count {
-                    isTop = true
-                }
-                
+                let isTop = compareWord(i, arrWord1, j, arrWord2)
                 if isTop {
                     word.append(arrWord1[i])
                     i+=1
@@ -65,6 +67,3 @@ class LargestMergeOfTwoStrings {
         return word
     }
 }
-
-
-//" uguuuuguugguggggggguuggguuggggggg"
