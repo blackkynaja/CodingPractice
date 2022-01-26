@@ -5,12 +5,11 @@
 class NumberofIslands {
     
     // MARK: - BFS
-    func fillIsland(_ row: Int,_ column: Int,_ grid: inout [[String]]) {
+    func fillIslandBFS(_ row: Int,_ column: Int,_ grid: inout [[String]]) {
         var islands = [(Int,Int)]()
         islands.append((row,column))
         
         while islands.count > 0 {
-            print(islands)
             var nextIsland = [(Int,Int)]()
             for island in islands {
                 grid[island.0][island.1] = "2"
@@ -43,21 +42,6 @@ class NumberofIslands {
         }
     }
     
-    func numIslands(_ grid: [[String]]) -> Int {
-        var newGrid = grid.map{$0}
-        var count = 0
-        for row in 0..<grid.count {
-            for column in 0..<grid[row].count {
-                if newGrid[row][column] == "1" {
-                    count+=1
-                    fillIsland(row,column,&newGrid)
-                }
-            }
-        }
-        
-        return count
-    }
-    
     // MARK: - DFS
     func fillIslandDFS(_ row: Int,_ column: Int,_ grid: inout [[String]]) {
         if row < 0 || row >= grid.count || column < 0 || column >= grid[0].count {
@@ -73,5 +57,20 @@ class NumberofIslands {
         fillIslandDFS(row+1,column,&grid)
         fillIslandDFS(row,column-1,&grid)
         fillIslandDFS(row,column+1,&grid)
+    }
+    
+    func numIslands(_ grid: [[String]]) -> Int {
+        var newGrid = grid.map{$0}
+        var count = 0
+        for row in 0..<grid.count {
+            for column in 0..<grid[row].count {
+                if newGrid[row][column] == "1" {
+                    count+=1
+                    fillIslandBFS(row,column,&newGrid)
+                }
+            }
+        }
+        
+        return count
     }
 }
