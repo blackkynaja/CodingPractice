@@ -1,6 +1,9 @@
 /*
  https://leetcode.com/problems/meeting-rooms-ii/
+ 
+ Topics: Array, Two Pointers, Greedy, Sorting, Heap
  */
+
 class MeetingRoomII {
     func minMeetingRooms(_ intervals: [[Int]]) -> Int {
         var starts = intervals.map { (items) -> Int in
