@@ -1,6 +1,9 @@
 /*
  https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+ 
+ Topics: Array
  */
+
 class CheckIfArrayIsSortedAndRotated {
     func check(_ nums: [Int]) -> Bool {
         var rotIndex = -1
@@ -19,7 +22,6 @@ class CheckIfArrayIsSortedAndRotated {
         for i in 0..<nums.count-1 {
             let index = (i+rotIndex)%nums.count
             let nextIndex = (index+1)%nums.count
-            print(nums[index], nums[nextIndex])
             if nums[index] > nums[nextIndex] {
                 return false
             }
