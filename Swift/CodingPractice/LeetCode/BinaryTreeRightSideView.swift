@@ -4,19 +4,6 @@
 
 //Definition for a binary tree node.
 class BinaryTreeRightSideView {
-    class TreeNode {
-        public var val: Int
-        public var left: TreeNode?
-        public var right: TreeNode?
-        public init() { self.val = 0; self.left = nil; self.right = nil; }
-        public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
-        public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
-            self.val = val
-            self.left = left
-            self.right = right
-        }
-    }
-
     func rightSideViewHelper(_ root: TreeNode?,_ level: Int) -> [[Int:Int]] {
         guard let tree = root else { return [[Int:Int]]() }
         var result = [[Int:Int]]()
@@ -33,7 +20,6 @@ class BinaryTreeRightSideView {
 
     func rightSideView(_ root: TreeNode?) -> [Int] {
         let dicts = rightSideViewHelper(root, 0)
-        print(dicts)
         var setLevel = Set<Int>()
         var results = [Int]()
         
