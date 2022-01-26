@@ -1,6 +1,9 @@
 /*
  https://leetcode.com/problems/two-sum/
+ 
+ Topics: Array, Hash Table
  */
+
 class TwoSum {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dictNum = [Int:Int]()
