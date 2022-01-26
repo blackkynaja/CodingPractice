@@ -1,12 +1,14 @@
 /*
  https://leetcode.com/problems/merge-two-binary-trees/
+ 
+ Topics: Tree, BFS, DFS, Binary Tree
  */
 
 class MergeTwoBinaryTrees {
     
     func mergeTreesHelper(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
         guard let leftNode = root1 else {
-            return root2 ?? nil
+            return root2
         }
         
         guard let rightNode = root2 else {
@@ -25,7 +27,7 @@ class MergeTwoBinaryTrees {
     }
 
     func mergeTrees(_ root1: TreeNode?, _ root2: TreeNode?) -> TreeNode? {
-        let tree = mergeTreesHelper(root1, root2) ?? nil
+        let tree = mergeTreesHelper(root1, root2)
         return tree
     }
 }
