@@ -13,6 +13,34 @@ class TreeNode {
     }
 }
 
+// MARK: - TrieNode
+// Definition for a binary tree node.
+class TrieNode {
+    public var childs = [Character: TrieNode]()
+    
+    func get(_ c: Character) -> TrieNode? {
+        return childs[c]
+    }
+    
+    private func dfs(_ node: TrieNode, _ current: [Character], _ results: inout [String]) {
+        if node.childs.count == 0 {
+            results.append(String(current))
+        }
+        
+        for (key, value) in node.childs {
+            var newCurr = current
+            newCurr.append(key)
+            dfs(value, newCurr, &results)
+        }
+    }
+    
+    func traverse() -> [String] {
+        var results = [String]()
+        dfs(self, [Character](), &results)
+        return results
+    }
+}
+
 // MARK: - ListNode
 // Definition for singly-linked list.
 class ListNode {
