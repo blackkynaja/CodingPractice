@@ -17,11 +17,7 @@ class Subsets {
     
     func subsets(_ nums: [Int]) -> [[Int]] {
         var results = [[Int]]()
-        results.append([])
-        for i in 0..<nums.count {
-            subsetsHelper(nums, i+1, [nums[i]], &results)
-        }
-        
+        subsetsHelper(nums, 0, [], &results)
         return results
     }
     
