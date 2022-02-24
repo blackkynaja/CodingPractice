@@ -90,3 +90,23 @@ extension ListNode: Hashable {
         return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
+
+// MARK: - Node
+class Node {
+    public var val: Int
+    public var neighbors: [Node?]
+    public init(_ val: Int) {
+        self.val = val
+        self.neighbors = []
+    }
+}
+
+extension Node: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
+    }
+    
+    static func == (lhs: Node, rhs: Node) -> Bool {
+        return ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
+    }
+}
