@@ -36,7 +36,6 @@ class PermutationinString {
         }
         
         index = max(lastFalseIndex, gap)
-        print(s1,s2, index)
         
         return isPermutation
     }
